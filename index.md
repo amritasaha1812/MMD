@@ -35,9 +35,9 @@ Please [Click here]({{site.baseurl}}/download/) to download the dataset.
 
 ---
 ---
-**EXAMPLE_DIALOG**
+**EXAMPLE DIALOG**
 
-![Multimodal Dialogue Snippet](dialogue_example.png){:class="img-responsive"}
+![Multimodal Dialogue Snippet](dialogue.jpg){:class="img-responsive"}
 
 ---
 ---

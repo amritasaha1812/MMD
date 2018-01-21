@@ -82,7 +82,7 @@ Please [Click here]({{site.baseurl}}/download/) to download the dataset.
 	<td class="tg-031e"><i>List more in the upper material of the 5th image and style as the 3rd and the 5th</i></td>
   </tr>
   <tr>
-  	<td class="tg-031e">	Multimodal Inference</b></td>
+  	<td class="tg-031e">	<b>Multimodal Inference</b></td>
 	<td class="tg-031e">User gives partial information in form of images and text in the context</td>
 	<td class="tg-031e"><i>See the first espadrille. I wish to see more like it but in a silver colored type</i></td>
   </tr>
@@ -91,7 +91,7 @@ Please [Click here]({{site.baseurl}}/download/) to download the dataset.
 	<td class="tg-031e">Sometimes inferences for the user?s questions go beyond the dialog context to understanding the domain</td>
 	<td class="tg-031e"><i>Will the 5th result go well with a large sized messenger bag?</i></td>
   <tr>
-  	<td class-"tg-031e"><b>Coreference Resolution / Incomplete Question</b></td>
+  	<td class-"tg-031e"><b>Coreference or Ellipsis Resolution</b></td>
 	<td class="tg-031e">Temporal continuity between successive questions from the user may cause some of them to be incomplete or to refer to items or aspects mentioned previously</td>
 	<td class="tg-031e"><i>Show me the 3rd product in some different directions ... What about the product in the 5th image?</i></td>
   </tr>

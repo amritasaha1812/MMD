@@ -43,6 +43,9 @@ Please [Click here]({{site.baseurl}}/download/) to download the dataset.
 .tg .tg-yw4l{vertical-align:top}
 </style>
 <table class="tg">
+ <col width="80">
+  <col width="130">
+  <col width="130">
   <tr>
     <th class="tg-031e"><b>Type of Complexity</b></th>
     <th class="tg-031e"><b>Example Dialog State</b></th>

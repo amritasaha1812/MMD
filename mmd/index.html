@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=640">
+
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <link rel="stylesheet" href="../assets/css/style.css" media="screen">
+<!--     <link rel="stylesheet" href="{{ '/assets/css/mobile.css' | relative_url }}" media="handheld, only screen and (max-device-width:640px)">
+    <link rel="stylesheet" href="{{ '/assets/css/non-screen.css' | relative_url }}" media="handheld, only screen and (max-device-width:640px)"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script type="text/javascript" src="../assets/js/modernizr.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../assets/js/headsmart.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $('#main_content').headsmart()
+      })
+    </script>
+
+    <div class="navbar navbar-inverse navbar-fixed-top" id="top">
+      <div class="container-fluid">
+          <ul class="nav navbar-nav navbar-left horizontal-list" style="list-style: none;">            
+                  <li><a href="../">Home</a></li>
+                  <li><a href="../about">About</a></li>
+                  <li><a href="../_pages/people.html">People</a></li>
+                  <li><a href="../dataset/">Dataset</a></li>
+                  <li><a href="../download/">Download</a></li>
+                  <li><a href="../_pages/example.html">Examples</a></li>
+          </ul>
+      </div>
+    </div>
+    <br>
+    <br>
+
+  </head>
+
+  <body>
+    <style type="text/css">
+	.tg  {border-collapse:collapse;border-spacing:0;}
+	.tg td{font-family:Arial, sans-serif;font-size:14px;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+	.tg th{font-family:Arial, sans-serif;font-size:14px;font-weight:normal;padding:10px 5px;border-style:solid;border-width:1px;overflow:hidden;word-break:normal;}
+	.tg .tg-yw4l{vertical-align:top}
+	</style> 
+	<BR><P></P>
+	<DIV ALIGN="CENTER"><A NAME="87"><tex2html_anchor_mark></A>
+	<TABLE class="tg">
+	<CAPTION><STRONG>Table 1:</STRONG>
+	Details of example automata states as described by domain experts.</CAPTION>
+	<TR><TD>
+	<DIV ALIGN="CENTER">
+	
+	<TABLE CELLPADDING=3 BORDER="1" class="tg">
+	<TR><TH ALIGN="LEFT" VALIGN="TOP" WIDTH=300><SPAN><B>Automata State</B></SPAN></TH>
+	<TH ALIGN="LEFT" VALIGN="TOP" WIDTH=531><SPAN><B>State Description</SPAN></TH>
+	</TR>
+	<TR><TH ALIGN="LEFT" VALIGN="TOP" WIDTH=300><SPAN><B>greeting</B></SPAN></TH>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=531>Shopper greets</TD>
+	</TR>
+	<TR><TH ALIGN="LEFT" VALIGN="TOP" WIDTH=300><SPAN><B>self-info</B></SPAN></TH>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=531>Shopper gives information about him/herself</TD>
+	</TR>
+	<TR><TH ALIGN="LEFT" VALIGN="TOP" WIDTH=300><SPAN><B>give-requirement</B></SPAN></TH>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=531>Shopper describes his requirements</TD>
+	</TR>
+	<TR><TH ALIGN="LEFT" VALIGN="TOP" WIDTH=300><SPAN><B>show-image</B></SPAN></TH>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=531>Agent shows relevant responses for the Shopper's query</TD>
+	</TR>
+	<TR><TH ALIGN="LEFT" VALIGN="TOP" WIDTH=300><SPAN><B>give-image-description</B></SPAN></TH>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=531>Agent generates short description of the product, using visual and catalog information</TD>
+	</TR>
+	<TR><TH ALIGN="LEFT" VALIGN="TOP" WIDTH=300><SPAN><B>give-feedback-on-latest-results, show-more</B></SPAN></TH>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=531>Shopper expresses preference towards one or more of the last results shown and possibly modifies his requirements and wants to see more</TD>
+	</TR>
+	<TR><TH ALIGN="LEFT" VALIGN="TOP" WIDTH=300><SPAN><B>give-feedback-on-previous-results, show-more</B></SPAN></TH>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=531>Shopper expresses preference towards one or more of the results shown previously and possibly modifies his requirements and wants to see more</TD>
+	</TR>
+	<TR><TH ALIGN="LEFT" VALIGN="TOP" WIDTH=300><SPAN><B>give-feedback-on-latest-results, show-image, show-more</B></SPAN></TH>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=531>Shopper expresses preference towards one or more of the latest results, and shows a new image to possibly modify his requirements and wants to see more</TD>
+	</TR>
+	<TR><TH ALIGN="LEFT" VALIGN="TOP" WIDTH=300><SPAN><B>give-feedback-on-previous-results, show-image, show-more</B></SPAN></TH>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=531>Shopper expresses preference towards one or more results shown previously, and shows a new image to possibly modify his requirements and wants to see more</TD>
+	</TR>
+	<TR><TH ALIGN="LEFT" VALIGN="TOP" WIDTH=300><SPAN><B>show-orientation</B></SPAN></TH>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=531>Shopper wants to see an item from different orientations</TD>
+	</TR>
+	<TR><TH ALIGN="LEFT" VALIGN="TOP" WIDTH=300><SPAN><B>show-similar</B></SPAN></TH>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=531>Shopper wants to see similar to a particular item</TD>
+	</TR>
+	<TR><TH ALIGN="LEFT" VALIGN="TOP" WIDTH=300><SPAN><B>goes-with</B></SPAN></TH>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=531>Shopper asks for style-tip</TD>
+	</TR>
+	<TR><TH ALIGN="LEFT" VALIGN="TOP" WIDTH=300><SPAN><B>ask-attribute</B></SPAN></TH>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=531>Shopper asks about the attributes of the items shown</TD>
+	</TR>
+	<TR><TH ALIGN="LEFT" VALIGN="TOP" WIDTH=300><SPAN><B>suited-for</B></SPAN></TH>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=531>Shopper asks for other types of meta-info about the items shown</TD>
+	</TR>
+	<TR><TH ALIGN="LEFT" VALIGN="TOP" WIDTH=300><SPAN><B>sort-results</B></SPAN></TH>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=531>Shopper wants to sort the result set by some attribute</TD>
+	</TR>
+	<TR><TH ALIGN="LEFT" VALIGN="TOP" WIDTH=300><SPAN><B>filter-results</B></SPAN></TH>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=531>Shopper wants to filter the results based on some attribute</TD>
+	</TR>
+	<TR><TH ALIGN="LEFT" VALIGN="TOP" WIDTH=300><SPAN><B>celebrity</B></SPAN></TH>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=531>Shopper asks questions relating to some celebrities and his fashion items of interest</TD>
+	</TR>
+	<TR><TH ALIGN="LEFT" VALIGN="TOP" WIDTH=300><SPAN><B>switch-synset</B></SPAN></TH>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=531>Shopper wants to switch back to the type of fashion synset he had seen previously</TD>
+	</TR>
+	<TR><TH ALIGN="LEFT" VALIGN="TOP" WIDTH=300><SPAN><B>buy</B></SPAN></TH>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=531>Shopper wants to buy one or more items</TD>
+	</TR>
+	<TR><TH ALIGN="LEFT" VALIGN="TOP" WIDTH=300><SPAN><B>exit</B></SPAN></TH>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=531>Shopper wants to exit</TD>
+	</TR>
+	</TABLE>
+	</DIV>
+
+	<A NAME="tab:automata_states"><tex2html_anchor_mark></A></TD></TR>
+	</TABLE>
+	</DIV><P></P><BR>
+
+	<P>
+	<BR><P></P>
+	<DIV ALIGN="CENTER"><A NAME="102"><tex2html_anchor_mark></A>
+	<TABLE class="tg">
+	<CAPTION><STRONG>Table 2:</STRONG>
+	Domain Specific Knowledge Base Stats</CAPTION>
+	<TR><TD>
+	<DIV ALIGN="CENTER">
+	<TABLE CELLPADDING=3 BORDER="1" class="tg">
+	<TR><TD ALIGN="CENTER" COLSPAN=2><SPAN><SPAN><B>Knowledge Base Statistics</B></SPAN></SPAN></TD>
+	<TH ALIGN="LEFT" VALIGN="TOP" WIDTH=404><SPAN><B>Examples</B></SPAN></TH>
+	</TR>
+	<TR><TD ALIGN="LEFT" VALIGN="TOP" WIDTH=356><B>Number of Items Crawled</B></TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=68>1.05 Mil.</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=404>-</TD>
+	</TR>
+	<TR><TD ALIGN="LEFT" VALIGN="TOP" WIDTH=356><B>Avg. Number of Images per item</B></TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=68>4</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=404>-</TD>
+	</TR>
+	<TR><TD ALIGN="LEFT" VALIGN="TOP" WIDTH=356><B>Number of Fashion Synsets</B></TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=68>716</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=404>shirt, trouser, tuxedo, loafer, stilletoes, sunglasses, handbag, earring</TD>
+	</TR>
+	<TR><TD ALIGN="LEFT" VALIGN="TOP" WIDTH=356><B>Number of Fashion Attributes</B></TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=68>52</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=404>color, pattern, material, brand, style, dial material, band color, lens material, price, wash-care,</TD>
+	</TR>
+	<TR><TD ALIGN="LEFT" VALIGN="TOP" WIDTH=356><B>Number of Visual Fashion Attributes</B></TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=68>45</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=404>color, pattern, material, style, neck, sleeves, length, sole type, closure</TD>
+	</TR>
+	<TR><TD ALIGN="LEFT" VALIGN="TOP" WIDTH=356><B>Number of Meta-Info Attributes</B></TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=68>8</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=404>price, wash-care, product ranking, brand, size, suitable occasions</TD>
+	</TR>
+	<TR><TD ALIGN="LEFT" VALIGN="TOP" WIDTH=356><B>Avg. Number of Fashion Attribute per Synset</B></TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=68>16</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=404>-</TD>
+	</TR>
+	<TR><TD ALIGN="LEFT" VALIGN="TOP" WIDTH=356><B>Avg. Number of values per attribute</B></TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=68>4200</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=404>-</TD>
+	</TR>
+	<TR><TD ALIGN="LEFT" VALIGN="TOP" WIDTH=356><B>Number of Coarse-Grained StyleTips (Synset, Synset association)</B></TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=68>8871</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=404>shirt <tex2html_ampersand_mark> trouser, tshirt <tex2html_ampersand_mark> sneakers, tuxedo <tex2html_ampersand_mark> cufflinks, suit <tex2html_ampersand_mark> formal shoes, kurta <tex2html_ampersand_mark> jeans</TD>
+	</TR>
+	<TR><TD ALIGN="LEFT" VALIGN="TOP" WIDTH=356><B>Number of Fine-Grained StyleTips (Attribute Synset, Attribute Synset association)</B></TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=68>350 K</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=404>white shirt <tex2html_ampersand_mark> black trousers, light t-shirt <tex2html_ampersand_mark> dark jacket, black gown and silver stilettoes</TD>
+	</TR>
+	<TR><TD ALIGN="LEFT" VALIGN="TOP" WIDTH=356><B>Number of Celebrity profiles</B></TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=68>411</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=404>Celeb1 likes vegan-leather shoes, monochrome pastel shaded t-shirts and polyester jackets</TD>
+	</TR>
+	<TR><TD ALIGN="LEFT" VALIGN="TOP" WIDTH=356><B>Avg. Number of Fashion Synsets endorsed by a celebrity</B></TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=68>4</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=404>Celeb1 endorses lehenga, saree, blouse, kurti, sandals and stilettos.</TD>
+	</TR>
+	<TR><TD ALIGN="LEFT" VALIGN="TOP" WIDTH=356><B>Avg. Number of Celebrities endorsing a fashion synset</B></TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=68>15</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=404>-</TD>
+	</TR>
+	<TR><TD ALIGN="LEFT" VALIGN="TOP" WIDTH=356><B>Number of Fashion Synsets endorsed by celebrities</B></TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=68>252</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=404>-</TD>
+	</TR>
+	</TABLE>
+	</DIV>
+
+	<A NAME="tab:knowledge_stats"><tex2html_anchor_mark></A></TD></TR>
+	</TABLE>
+	</DIV><P></P><BR>
+
+	<P>
+	<BR><P></P>
+	<DIV ALIGN="CENTER"><A NAME="118"><tex2html_anchor_mark></A>
+	<TABLE class="tg">
+	<CAPTION><STRONG>Table 3:</STRONG>
+	Multimodal Dialog Dataset Statistics</CAPTION>
+	<TR><TD>
+	<DIV ALIGN="CENTER">
+	<TABLE CELLPADDING=3 BORDER="1" class="tg">
+	<TR><TH ALIGN="LEFT" VALIGN="TOP" WIDTH=510><SPAN><B>Dataset Statistics</B></SPAN></TH>
+	<TH ALIGN="LEFT" VALIGN="TOP" WIDTH=105><SPAN><B>Train</B></SPAN></TH>
+	<TH ALIGN="LEFT" VALIGN="TOP" WIDTH=105><SPAN><B>Valid</B></SPAN></TH>
+	<TH ALIGN="LEFT" VALIGN="TOP" WIDTH=105><SPAN><B>Test</B></SPAN></TH>
+	</TR>
+	<TR><TD ALIGN="LEFT" VALIGN="TOP" WIDTH=510><B>Number of Dialogs(chat sessions)</B></TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=85>105,439</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=85>22,595</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=85>22,595</TD>
+	</TR>
+	<TR><TD ALIGN="LEFT" VALIGN="TOP" WIDTH=269><B>Proportion in terms of dialogs</B></TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=85>70<tex2html_percent_mark></TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=85>15<tex2html_percent_mark></TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=85>15<tex2html_percent_mark></TD>
+	</TR>
+	<TR><TD ALIGN="LEFT" VALIGN="TOP" WIDTH=269><B>Avg. Number of Utterances per dialog</B></TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=85>40</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=85>40</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=85>40</TD>
+	</TR>
+	<TR><TD ALIGN="LEFT" VALIGN="TOP" WIDTH=269><B>Number of Utterances with shopper's questions</B></TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=85>2M</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=85>446K</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=85>445K</TD>
+	</TR>
+	<TR><TD ALIGN="LEFT" VALIGN="TOP" WIDTH=269><B>Number of Utterances with agent's image response</B></TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=85>904K</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=85>194K</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=85>193K</TD>
+	</TR>
+	<TR><TD ALIGN="LEFT" VALIGN="TOP" WIDTH=269><B>Number of Utterances with agent's text response</B></TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=85>1.54M</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=85>331K</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=85>330K</TD>
+	</TR>
+	<TR><TD ALIGN="LEFT" VALIGN="TOP" WIDTH=269><B>Avg. Number of Positive images in agent's image response</B></TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=85>4</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=85>4</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=85>4</TD>
+	</TR>
+	<TR><TD ALIGN="LEFT" VALIGN="TOP" WIDTH=269><B>Avg. Number of Negative images in agent's image response</B></TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=85>4</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=85>4</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=85>4</TD>
+	</TR>
+	<TR><TD ALIGN="LEFT" VALIGN="TOP" WIDTH=269><B>Avg. Number of Words in shopper's Question</B></TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=85>12</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=85>12</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=85>12</TD>
+	</TR>
+	<TR><TD ALIGN="LEFT" VALIGN="TOP" WIDTH=269><B>Avg. Number of Words in agent's text Response</B></TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=85>14</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=85>14</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=85>14</TD>
+	</TR>
+	<TR><TD ALIGN="LEFT" VALIGN="TOP" WIDTH=269><B>Avg. Number of Automata states per dialog</B></TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=85>15</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=85>15</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=85>15</TD>
+	</TR>
+	<TR><TD ALIGN="LEFT" VALIGN="TOP" WIDTH=269><B>Avg. Number of Dialogs having a particular automata state</B></TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=85>20,246</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=85>4,346</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=85>4,335</TD>
+	</TR>
+	<TR><TD ALIGN="LEFT" VALIGN="TOP" WIDTH=269><B>Avg. Number of Automata state-types per dialog</B></TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=85>13</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=85>13</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=85>13</TD>
+	</TR>
+	<TR><TD ALIGN="LEFT" VALIGN="TOP" WIDTH=269><B>Avg. Number of dialogs having a particular state-type</B></TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=85>59,638</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=85>12,806</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=85>12,764</TD>
+	</TR>
+	<TR><TD ALIGN="LEFT" VALIGN="TOP" WIDTH=269><B>Number of Automata states</B></TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=85>84</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=85>84</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=85>84</TD>
+	</TR>
+	<TR><TD ALIGN="LEFT" VALIGN="TOP" WIDTH=269><B>Number of Automata state types</B></TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=85>22</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=85>22</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=85>22</TD>
+	</TR>
+	<TR><TD ALIGN="LEFT" VALIGN="TOP" WIDTH=269><B>Vocabulary Size (with minimum frequency 4)</B></TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=85>26,422</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=85>-</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=85>-</TD>
+	</TR>
+	</TABLE>
+	</DIV>
+
+	<A NAME="tab:dataset_stats"><tex2html_anchor_mark></A></TD></TR>
+	</TABLE>
+	</DIV><P></P><BR>
+
+	<P>
+</body>	

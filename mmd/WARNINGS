@@ -1,0 +1,23 @@
+No implementation found for style `url'
+No implementation found for style `mwe'
+No implementation found for style `multirow'
+No implementation found for style `microtype'
+No implementation found for style `lipsum'
+No implementation found for style `epstopdf'
+No implementation found for style `xcolor'
+No implementation found for style `ragged2e'
+No implementation found for style `subfigure'
+No implementation found for style `caption'
+No implementation found for style `titlesec'
+No implementation found for style `enumitem'
+No implementation found for style `adjustbox'
+
+mmd.tex is newer than mmd.aux: Please rerun latex.
+
+? brace missing for \section
+
+? brace missing for \subsection
+
+? brace missing for \subsubsection
+
+? brace missing for \setlength

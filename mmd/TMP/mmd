@@ -1,0 +1,129 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{mwe}
+\usepackage{multirow}
+\usepackage{microtype}
+\usepackage{lipsum}
+\usepackage{epstopdf}
+\usepackage{xcolor}
+\usepackage{ragged2e}
+\usepackage{subfigure}
+\usepackage{array}
+\usepackage{caption}
+\setlength{\parskip}{0cm}
+\setlength{\parindent}{1em}
+\usepackage[compact]{titlesec}
+\usepackage[shortlabels]{enumitem}
+\titlespacing{\section}{0pt}{2ex}{1ex}
+\titlespacing{\subsection}{0pt}{1ex}{0ex}
+\titlespacing{\subsubsection}{0pt}{0.5ex}{0ex}
+%\usepackage[text={16cm,24cm}]{geometry}
+\usepackage[export]{adjustbox}[2011/08/13]
+\setlength{\textfloatsep}{2mm}
+\addtolength{\parskip}{-0.5mm}
+\setlength\abovecaptionskip{-2pt}
+\setlist[enumerate]{noitemsep}
+\newcolumntype{P}[1]{>{\RaggedRight\hspace{0pt}}p{#1}}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\begin{document}
+\begin{table}[t]
+{\normalsize
+\begin{center}
+\begin{tabular}{|p{5.8cm}|p{15.2cm}|}
+\hline
+\textbf{Automata State} & \textbf{State Description}\\ \hline
+\textbf{greeting} & Shopper greets \\ \hline
+\textbf{self-info} & Shopper gives information about him/herself \\ \hline
+\textbf{give-requirement} & Shopper describes his requirements\\ \hline
+\textbf{show-image} & Agent shows relevant responses for the Shopper's query\\  
+\textbf{give-image-description} & Agent generates short description of the product, using visual and catalog information\\
+\textbf{give-feedback-on-latest-results, show-more} & Shopper expresses preference towards one or more of the last results shown and possibly modifies his requirements and wants to see more \\ \hline
+\textbf{give-feedback-on-previous-results, show-more} & Shopper expresses preference towards one or more of the results shown previously and possibly modifies his requirements and wants to see more \\ \hline
+\textbf{give-feedback-on-latest-results, show-image, show-more} & Shopper expresses preference towards one or more of the latest results, and shows a new image to possibly modify his requirements and wants to see more \\ \hline
+\textbf{give-feedback-on-previous-results, show-image, show-more} & Shopper expresses preference towards one or more results shown previously, and shows a new image to possibly modify his requirements and wants to see more \\ \hline
+\textbf{show-orientation} & Shopper wants to see an item from different orientations\\ \hline
+\textbf{show-similar} & Shopper wants to see similar to a particular item\\ \hline
+\textbf{goes-with} & Shopper asks for style-tip\\ \hline
+\textbf{ask-attribute} & Shopper asks about the attributes of the items shown\\ \hline
+\textbf{suited-for} & Shopper asks for other types of meta-info about the items shown\\ \hline
+\textbf{sort-results} & Shopper wants to sort the result set by some attribute\\ \hline
+\textbf{filter-results} & Shopper wants to filter the results based on some attribute\\ \hline
+\textbf{celebrity} & Shopper asks questions relating to some celebrities and his fashion items of interest\\ \hline
+\textbf{switch-synset} & Shopper wants to switch back to the type of fashion synset he had seen previously\\ \hline
+\textbf{buy} & Shopper wants to buy one or more items\\ \hline
+\textbf{exit} & Shopper wants to exit \\ \hline
+\end{tabular}
+\end{center}
+}
+\caption{Details of example automata states as described by domain experts.}
+\label{tab:automata_states}
+\end{table}
+
+
+\begin{table}
+{\normalsize
+\begin{center}
+\begin{tabular}{|p{5.5cm}|p{2.4cm}|p{12.5cm}|} \hline
+\multicolumn{2}{|c|}{\textbf{Knowledge Base Statistics}} & \textbf{Examples} \\ \hline
+\#Items Crawled & 1.05M & -\\\hline
+Avg. \#Images per item & 4 & -\\\hline
+\#Fashion Synsets& 716 & shirt, trouser, tuxedo, loafer, stilletoes, sunglasses, handbag, earring \\\hline
+\#Fashion Attributes & 52 & color, pattern, material, brand, style, dial material, band color, lens material, price, wash-care, \\\hline
+\#Visual Fashion Attributes & 45 & color, pattern, material, style, neck, sleeves, length, sole type, closure \\\hline
+\#Meta-Info Attributes & 8 & price, wash-care, product ranking, brand, size, suitable occasions \\\hline
+Avg. \#Fashion Attribute per Synset & 16 & -\\\hline
+Avg. \#values per attribute & 4200 & - \\\hline
+\#Coarse-Grained StyleTips (Synset, Synset association)& 8871 & shirt \& trouser, tshirt \& sneakers, tuxedo \& cufflinks, suit \& formal shoes, kurta \& jeans\\\hline
+\#Fine-Grained StyleTips (Attribute Synset, Attribute Synset association) & 350K & white shirt \& black trousers, light t-shirt \& dark jacket, black gown and silver stilettoes \\ \hline
+\#Celebrity profiles & 411 & Celeb1 likes vegan-leather shoes, monochrome pastel shaded t-shirts and polyester jackets \\ \hline
+Avg. \#Fashion Synsets endorsed by a celebrity & 4 & Celeb1 endorses lehenga, saree, blouse, kurti, sandals and stilettos. \\ \hline
+Avg. \#Celebrities endorsing a fashion synset & 15 & - \\ \hline
+\#Fashion Synsets endorsed by celebrities & 252 & -\\ \hline
+\end{tabular}
+\end{center}
+}
+\caption{Domain Specific Knowledge Base Stats}
+\label{tab:knowledge_stats}
+\end{table}
+
+\begin{table}
+{\normalsize
+%\captionsetup{font=small}
+\begin{center}
+\begin{tabular}{|p{9.5cm}|p{3cm}|p{3cm}|p{3cm}|}\hline
+\textbf{Dataset Statistics} & \textbf{Train} & \textbf{Valid} & \textbf{Test} \\ \hline
+\#Dialogs(chat sessions) & 105,439 & 22,595 & 22,595 \\ \hline
+Proportion in terms of dialogs & 70\% & 15\% & 15\% \\ \hline
+Avg. \#Utterances per dialog & 40 & 40 & 40\\\hline
+\#Utterances with shopper's questions & 2M & 446K & 445K \\\hline
+\#Utterances with agent's image response & 904K & 194K & 193K \\\hline
+\#Utterances with agent's text response & 1.54M &331K & 330K \\\hline
+Avg. \#Positive images in agent's image response & 4 & 4 & 4 \\\hline
+Avg. \#Negative images in agent's image response & 4 & 4 & 4\\\hline
+%No. of pairs of positive-negative images in agent's image response & 1304,721 & 2813,861 & 2804,062\\\hline
+Avg. \#Words in shopper's Question & 12 & 12 & 12\\\hline
+Avg. \#Words in agent's text Response & 14 & 14 & 14\\\hline
+Avg. \#Automata states per dialog & 15 & 15 & 15\\\hline
+Avg. \#Dialogs having a particular automata state & 20,246 & 4,346 & 4,335\\ \hline
+Avg. \#Automata state-types per dialog & 13 & 13 & 13\\\hline
+Avg. \#dialogs having a particular state-type & 59,638 & 12,806 & 12,764\\\hline
+\#Automata states & 84 & 84  & 84 \\\hline
+\#Automata state types & 22 & 22 & 22 \\\hline
+Vocabulary Size (threshold frequency$>$=4) & 26,422 & - & -\\\hline
+\end{tabular}
+\end{center}
+}
+\caption{Multimodal Dialog Dataset Statistics}
+\label{tab:dataset_stats}
+\end{table}
+
+\end{document}

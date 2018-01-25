@@ -1,0 +1,130 @@
+\documentclass[10pt,a4paper]<<1>>article<<1>>
+\usepackage[utf8]<<2>>inputenc<<2>>
+\usepackage<<3>>amsmath<<3>>
+\usepackage<<4>>amsfonts<<4>>
+\usepackage<<5>>amssymb<<5>>
+\usepackage<<6>>times<<6>>
+\usepackage<<7>>latexsym<<7>>
+\usepackage<<8>>graphicx<<8>>
+\usepackage<<9>>url<<9>>
+\usepackage<<10>>mwe<<10>>
+\usepackage<<11>>multirow<<11>>
+\usepackage<<12>>microtype<<12>>
+\usepackage<<13>>lipsum<<13>>
+\usepackage<<14>>epstopdf<<14>>
+\usepackage<<15>>xcolor<<15>>
+\usepackage<<16>>ragged2e<<16>>
+\usepackage<<17>>subfigure<<17>>
+\usepackage<<18>>array<<18>>
+\usepackage<<19>>caption<<19>>
+\begin<<139>>tex2html_nowrap<<139>>
+\setlength<<20>>\parskip<<20>><<21>>0cm<<21>>\end<<140>>tex2html_nowrap<<140>> 
+\begin<<141>>tex2html_nowrap<<141>>
+\setlength<<22>>\parindent<<22>><<23>>1em<<23>>\end<<142>>tex2html_nowrap<<142>> 
+\usepackage[compact]<<24>>titlesec<<24>>
+\usepackage[shortlabels]<<25>>enumitem<<25>>
+\titlespacing<<26>>\section<<26>><<27>>0pt<<27>><<28>>2ex<<28>><<29>>1ex<<29>>
+\titlespacing<<30>>\subsection<<30>><<31>>0pt<<31>><<32>>1ex<<32>><<33>>0ex<<33>>
+\titlespacing<<34>>\subsubsection<<34>><<35>>0pt<<35>><<36>>0.5ex<<36>><<37>>0ex<<37>>
+\usepackage[export]<<38>>adjustbox<<38>>[2011/08/13]
+\begin<<143>>tex2html_nowrap<<143>>
+\setlength<<39>>\textfloatsep<<39>><<40>>2mm<<40>>\end<<144>>tex2html_nowrap<<144>> 
+\begin<<145>>tex2html_nowrap<<145>>
+\addtolength<<41>>\parskip<<41>><<42>>-0.5mm<<42>>\end<<146>>tex2html_nowrap<<146>> 
+\begin<<147>>tex2html_nowrap<<147>>
+\setlength\end<<148>>tex2html_nowrap<<148>> \abovecaptionskip<<43>>-2pt<<43>>
+\setlist[enumerate]<<44>>noitemsep<<44>>
+\newcolumntype<<45>>P<<45>>[1]<<130>>;SPMgt;<<122>>\RaggedRight\hspace<<46>>0pt<<46>><<122>>p<<47>>#1<<47>><<130>>
+\newcolumntype<<48>>L<<48>>[1]<<131>>;SPMgt;<<123>>\begin<<149>>tex2html_deferred<<149>>\raggedright\end<<150>>tex2html_deferred<<150>>\let\newline\\ \arraybackslash\hspace<<49>>0pt<<49>><<123>>m<<50>>#1<<50>><<131>>
+\newcolumntype<<51>>C<<51>>[1]<<132>>;SPMgt;<<124>>\begin<<151>>tex2html_deferred<<151>>\centering\end<<152>>tex2html_deferred<<152>>\let\newline\\ \arraybackslash\hspace<<52>>0pt<<52>><<124>>m<<53>>#1<<53>><<132>>
+\newcolumntype<<54>>R<<54>>[1]<<133>>;SPMgt;<<125>>\begin<<153>>tex2html_deferred<<153>>\raggedleft\end<<154>>tex2html_deferred<<154>>\let\newline\\ \arraybackslash\hspace<<55>>0pt<<55>><<125>>m<<56>>#1<<56>><<133>>
+\begin<<57>>document<<57>>
+\begin<<58>>table<<58>>[t]
+<<134>>\begin<<155>>tex2html_deferred<<155>>\normalsize\end<<156>>tex2html_deferred<<156>>
+\begin<<59>>center<<59>>
+\begin<<60>>tabular<<60>><<126>>|p<<61>>5.8cm<<61>>|p<<62>>15.2cm<<62>>|<<126>>
+\hline
+\textbf<<63>>Automata State<<63>> ;SPMamp; \textbf<<64>>State Description<<64>>\\  \hline
+\textbf<<65>>greeting<<65>> ;SPMamp; Shopper greets \\  \hline
+\textbf<<66>>self-info<<66>> ;SPMamp; Shopper gives information about him/herself \\  \hline
+\textbf<<67>>give-requirement<<67>> ;SPMamp; Shopper describes his requirements\\  \hline
+\textbf<<68>>show-image<<68>> ;SPMamp; Agent shows relevant responses for the Shopper's query\\   
+\textbf<<69>>give-image-description<<69>> ;SPMamp; Agent generates short description of the product, using visual and catalog information\\ 
+\textbf<<70>>give-feedback-on-latest-results, show-more<<70>> ;SPMamp; Shopper expresses preference towards one or more of the last results shown and possibly modifies his requirements and wants to see more \\  \hline
+\textbf<<71>>give-feedback-on-previous-results, show-more<<71>> ;SPMamp; Shopper expresses preference towards one or more of the results shown previously and possibly modifies his requirements and wants to see more \\  \hline
+\textbf<<72>>give-feedback-on-latest-results, show-image, show-more<<72>> ;SPMamp; Shopper expresses preference towards one or more of the latest results, and shows a new image to possibly modify his requirements and wants to see more \\  \hline
+\textbf<<73>>give-feedback-on-previous-results, show-image, show-more<<73>> ;SPMamp; Shopper expresses preference towards one or more results shown previously, and shows a new image to possibly modify his requirements and wants to see more \\  \hline
+\textbf<<74>>show-orientation<<74>> ;SPMamp; Shopper wants to see an item from different orientations\\  \hline
+\textbf<<75>>show-similar<<75>> ;SPMamp; Shopper wants to see similar to a particular item\\  \hline
+\textbf<<76>>goes-with<<76>> ;SPMamp; Shopper asks for style-tip\\  \hline
+\textbf<<77>>ask-attribute<<77>> ;SPMamp; Shopper asks about the attributes of the items shown\\  \hline
+\textbf<<78>>suited-for<<78>> ;SPMamp; Shopper asks for other types of meta-info about the items shown\\  \hline
+\textbf<<79>>sort-results<<79>> ;SPMamp; Shopper wants to sort the result set by some attribute\\  \hline
+\textbf<<80>>filter-results<<80>> ;SPMamp; Shopper wants to filter the results based on some attribute\\  \hline
+\textbf<<81>>celebrity<<81>> ;SPMamp; Shopper asks questions relating to some celebrities and his fashion items of interest\\  \hline
+\textbf<<82>>switch-synset<<82>> ;SPMamp; Shopper wants to switch back to the type of fashion synset he had seen previously\\  \hline
+\textbf<<83>>buy<<83>> ;SPMamp; Shopper wants to buy one or more items\\  \hline
+\textbf<<84>>exit<<84>> ;SPMamp; Shopper wants to exit \\  \hline
+\end<<85>>tabular<<85>>
+\end<<86>>center<<86>>
+<<134>>
+\begin<<157>>tex2html_deferred<<157>>\caption<<87>>Details of example automata states as described by domain experts.<<87>>\end<<158>>tex2html_deferred<<158>>
+\label<<88>>tab:automata_states<<88>>
+\end<<89>>table<<89>>
+\begin<<159>>tex2html_deferred<<159>>\par\end<<160>>tex2html_deferred<<160>>
+\begin<<90>>table<<90>>
+<<135>>\begin<<161>>tex2html_deferred<<161>>\normalsize\end<<162>>tex2html_deferred<<162>>
+\begin<<91>>center<<91>>
+\begin<<92>>tabular<<92>><<127>>|p<<93>>5.5cm<<93>>|p<<94>>2.4cm<<94>>|p<<95>>12.5cm<<95>>|<<127>> \hline
+\multicolumn<<96>>2<<96>><<97>>|c|<<97>><<128>>\textbf<<98>>Knowledge Base Statistics<<98>><<128>> ;SPMamp; \textbf<<99>>Examples<<99>> \\  \hline
+\#Items Crawled ;SPMamp; 1.05M ;SPMamp; -\\ \hline
+Avg. \#Images per item ;SPMamp; 4 ;SPMamp; -\\ \hline
+\#Fashion Synsets;SPMamp; 716 ;SPMamp; shirt, trouser, tuxedo, loafer, stilletoes, sunglasses, handbag, earring \\ \hline
+\#Fashion Attributes ;SPMamp; 52 ;SPMamp; color, pattern, material, brand, style, dial material, band color, lens material, price, wash-care, \\ \hline
+\#Visual Fashion Attributes ;SPMamp; 45 ;SPMamp; color, pattern, material, style, neck, sleeves, length, sole type, closure \\ \hline
+\#Meta-Info Attributes ;SPMamp; 8 ;SPMamp; price, wash-care, product ranking, brand, size, suitable occasions \\ \hline
+Avg. \#Fashion Attribute per Synset ;SPMamp; 16 ;SPMamp; -\\ \hline
+Avg. \#values per attribute ;SPMamp; 4200 ;SPMamp; - \\ \hline
+\#Coarse-Grained StyleTips (Synset, Synset association);SPMamp; 8871 ;SPMamp; shirt \& trouser, tshirt \& sneakers, tuxedo \& cufflinks, suit \& formal shoes, kurta \& jeans\\ \hline
+\#Fine-Grained StyleTips (Attribute Synset, Attribute Synset association) ;SPMamp; 350K ;SPMamp; white shirt \& black trousers, light t-shirt \& dark jacket, black gown and silver stilettoes \\  \hline
+\#Celebrity profiles ;SPMamp; 411 ;SPMamp; Celeb1 likes vegan-leather shoes, monochrome pastel shaded t-shirts and polyester jackets \\  \hline
+Avg. \#Fashion Synsets endorsed by a celebrity ;SPMamp; 4 ;SPMamp; Celeb1 endorses lehenga, saree, blouse, kurti, sandals and stilettos. \\  \hline
+Avg. \#Celebrities endorsing a fashion synset ;SPMamp; 15 ;SPMamp; - \\  \hline
+\#Fashion Synsets endorsed by celebrities ;SPMamp; 252 ;SPMamp; -\\  \hline
+\end<<100>>tabular<<100>>
+\end<<101>>center<<101>>
+<<135>>
+\begin<<163>>tex2html_deferred<<163>>\caption<<102>>Domain Specific Knowledge Base Stats<<102>>\end<<164>>tex2html_deferred<<164>>
+\label<<103>>tab:knowledge_stats<<103>>
+\end<<104>>table<<104>>
+\begin<<165>>tex2html_deferred<<165>>\par\end<<166>>tex2html_deferred<<166>>
+\begin<<105>>table<<105>>
+<<136>>\begin<<167>>tex2html_deferred<<167>>\normalsize\end<<168>>tex2html_deferred<<168>>
+\begin<<106>>center<<106>>
+\begin<<107>>tabular<<107>><<129>>|p<<108>>9.5cm<<108>>|p<<109>>3cm<<109>>|p<<110>>3cm<<110>>|p<<111>>3cm<<111>>|<<129>>\hline
+\textbf<<112>>Dataset Statistics<<112>> ;SPMamp; \textbf<<113>>Train<<113>> ;SPMamp; \textbf<<114>>Valid<<114>> ;SPMamp; \textbf<<115>>Test<<115>> \\  \hline
+\#Dialogs(chat sessions) ;SPMamp; 105,439 ;SPMamp; 22,595 ;SPMamp; 22,595 \\  \hline
+Proportion in terms of dialogs ;SPMamp; 70\% ;SPMamp; 15\% ;SPMamp; 15\% \\  \hline
+Avg. \#Utterances per dialog ;SPMamp; 40 ;SPMamp; 40 ;SPMamp; 40\\ \hline
+\#Utterances with shopper's questions ;SPMamp; 2M ;SPMamp; 446K ;SPMamp; 445K \\ \hline
+\#Utterances with agent's image response ;SPMamp; 904K ;SPMamp; 194K ;SPMamp; 193K \\ \hline
+\#Utterances with agent's text response ;SPMamp; 1.54M ;SPMamp;331K ;SPMamp; 330K \\ \hline
+Avg. \#Positive images in agent's image response ;SPMamp; 4 ;SPMamp; 4 ;SPMamp; 4 \\ \hline
+Avg. \#Negative images in agent's image response ;SPMamp; 4 ;SPMamp; 4 ;SPMamp; 4\\ \hline
+Avg. \#Words in shopper's Question ;SPMamp; 12 ;SPMamp; 12 ;SPMamp; 12\\ \hline
+Avg. \#Words in agent's text Response ;SPMamp; 14 ;SPMamp; 14 ;SPMamp; 14\\ \hline
+Avg. \#Automata states per dialog ;SPMamp; 15 ;SPMamp; 15 ;SPMamp; 15\\ \hline
+Avg. \#Dialogs having a particular automata state ;SPMamp; 20,246 ;SPMamp; 4,346 ;SPMamp; 4,335\\  \hline
+Avg. \#Automata state-types per dialog ;SPMamp; 13 ;SPMamp; 13 ;SPMamp; 13\\ \hline
+Avg. \#dialogs having a particular state-type ;SPMamp; 59,638 ;SPMamp; 12,806 ;SPMamp; 12,764\\ \hline
+\#Automata states ;SPMamp; 84 ;SPMamp; 84  ;SPMamp; 84 \\ \hline
+\#Automata state types ;SPMamp; 22 ;SPMamp; 22 ;SPMamp; 22 \\ \hline
+Vocabulary Size (threshold frequency\begin<<137>>tex2html_wrap_inline<<137>>$;SPMgt;$\end<<138>>tex2html_wrap_inline<<138>>=4) ;SPMamp; 26,422 ;SPMamp; - ;SPMamp; -\\ \hline
+\end<<116>>tabular<<116>>
+\end<<117>>center<<117>>
+<<136>>
+\begin<<169>>tex2html_deferred<<169>>\caption<<118>>Multimodal Dialog Dataset Statistics<<118>>\end<<170>>tex2html_deferred<<170>>
+\label<<119>>tab:dataset_stats<<119>>
+\end<<120>>table<<120>>
+\begin<<171>>tex2html_deferred<<171>>\par\end<<172>>tex2html_deferred<<172>>
+\end<<121>>document<<121>>

@@ -4,4 +4,4 @@ show_downloads: true
 google_analytics:
 theme: jekyll-theme-merlot
 include: ['_pages']
-baseurl: /CSQA
+baseurl: /CSQA_web

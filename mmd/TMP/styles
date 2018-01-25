@@ -1,0 +1,22 @@
+article 10pt, a4paper,
+inputenc utf8
+amsmath 
+amsfonts 
+amssymb 
+times 
+latexsym 
+graphicx 
+url 
+mwe 
+multirow 
+microtype 
+lipsum 
+epstopdf 
+xcolor 
+ragged2e 
+subfigure 
+array 
+caption 
+titlesec compact
+enumitem shortlabels
+adjustbox export

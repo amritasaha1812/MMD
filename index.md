@@ -7,8 +7,8 @@ layout: default
   <div class="panel-heading">Abstract</div>
 <div class="panel-body">
 
-  While multimodal conversation agents are gaining importance in several domains such as retail, travel etc., deep learning research in this area has been limited primarily due to the lack of availability of large-scale, open chatlogs. To overcome this bottleneck, in this paper we introduce the task of multimodal, domain-aware conversations, and propose the MMD benchmark dataset. This dataset was gathered by working in close coordination with large number of domain experts in the retail domain. These experts suggested various conversations flows and dialog states which are typically seen in multimodal conversations in the fashion domain. Keeping these flows and states in mind, we created a dataset consisting of over 150K conversation sessions between shoppers and sales agents, with the help of in-house annotators using a semi-automated manually intense iterative process. 
-With this dataset, we propose 5 new sub-tasks for multimodal conversations along with their evaluation methodology. We also propose two multimodal neural models in the encode-attend-decode paradigm and demonstrate their performance on two of the sub-tasks, namely text response generation and best image response selection. These experiments serve to establish baseline performance and open new research directions for each of these sub-tasks. Further, for each of the sub-tasks, we present a `per-state evaluation' of 9 most significant dialog states, which would enable more focused research into understanding the challenges and complexities involved in each of these states.
+While multimodal conversation agents are gaining importance in several domains such as retail, travel etc., deep learning research in this area has been limited primarily due to the lack of availability of large-scale, open chatlogs. To overcome this bottleneck, in this paper we introduce the task of multimodal, domain-aware conversations, and propose the MMD benchmark dataset. This dataset was gathered by working in close coordination with large number of domain experts in the retail domain. These experts suggested various conversations flows and dialog states which are typically seen in multimodal conversations in the fashion domain. Keeping these flows and states in mind, we created a dataset consisting of over 150K conversation sessions between shoppers and sales agents, with the help of in-house annotators using a semi-automated manually intense iterative process. 
+With this dataset, we propose 5 new sub-tasks for multimodal conversations along with their evaluation methodology. We also propose two multimodal neural models in the encode-attend-decode paradigm and demonstrate their performance on two of the sub-tasks, namely text response generation and best image response selection. These experiments serve to establish baseline performance and open new research directions for each of these sub-tasks. Further, for each of the sub-tasks, we present a 'per-state evaluation' of 9 most significant dialog states, which would enable more focused research into understanding the challenges and complexities involved in each of these states.
 </div>
 </div>
 
@@ -25,7 +25,7 @@ Put code link here
 **PAPER**
 
 <!-- Put paper arxiv link here -->
-Please download the paper here [paper link](mmd.pdf)
+Please download the paper here [paper link](paper.pdf)
 
 ---
 ---
@@ -33,13 +33,6 @@ Please download the paper here [paper link](mmd.pdf)
 
 Please [Click here]({{site.baseurl}}/download/) to download the dataset.
 
----
----
-**EXAMPLE DIALOG**
-
-![Multimodal Dialogue Snippet]({{"/images/dialogue.jpg"}}){:class="img-responsive"}
-
----
 ---
 ### Key Challenges posed by dataset
 
@@ -50,7 +43,7 @@ Please [Click here]({{site.baseurl}}/download/) to download the dataset.
 .tg .tg-yw4l{vertical-align:top}
 </style>
 <table class="tg">
- <col width="80">
+  <col width="80">
   <col width="130">
   <col width="130">
   <tr>
@@ -89,7 +82,7 @@ Please [Click here]({{site.baseurl}}/download/) to download the dataset.
 	<td class="tg-031e"><i>List more in the upper material of the 5th image and style as the 3rd and the 5th</i></td>
   </tr>
   <tr>
-  	<td class="tg-031e">	<b>Multimodal Inference</b></td>
+  	<td class="tg-031e">	Multimodal Inference</b></td>
 	<td class="tg-031e">User gives partial information in form of images and text in the context</td>
 	<td class="tg-031e"><i>See the first espadrille. I wish to see more like it but in a silver colored type</i></td>
   </tr>
@@ -98,11 +91,9 @@ Please [Click here]({{site.baseurl}}/download/) to download the dataset.
 	<td class="tg-031e">Sometimes inferences for the user?s questions go beyond the dialog context to understanding the domain</td>
 	<td class="tg-031e"><i>Will the 5th result go well with a large sized messenger bag?</i></td>
   <tr>
-  	<td class="tg-031e"><b>Coreference or Ellipsis Resolution</b></td>
+  	<td class-"tg-031e"><b>Coreference Resolution / Incomplete Question</b></td>
 	<td class="tg-031e">Temporal continuity between successive questions from the user may cause some of them to be incomplete or to refer to items or aspects mentioned previously</td>
 	<td class="tg-031e"><i>Show me the 3rd product in some different directions ... What about the product in the 5th image?</i></td>
   </tr>
 </table>  
-
-
 

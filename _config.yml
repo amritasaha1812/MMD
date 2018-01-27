@@ -1,7 +1,7 @@
-title: CSQA dataset
-description: Information and resources regarding CSQA dataset
+title: MMD dataset
+description: Information and resources regarding MMD dataset
 show_downloads: true
 google_analytics:
 theme: jekyll-theme-merlot
 include: ['_pages']
-baseurl: /CSQA_web
+baseurl: /MMD

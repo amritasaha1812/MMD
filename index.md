@@ -12,22 +12,7 @@ With this dataset, we propose 5 new sub-tasks for multimodal conversations along
 </div>
 </div>
 
----
-**CODE**
-<div class='row section highlight'>
-  <div class='col-xs-10 col-xs-offset-1'>
-Put code link here
-  </div>
-</div>
 
----
----
-**PAPER**
-
-<!-- Put paper arxiv link here -->
-Please download the paper here [paper link](paper.pdf)
-
----
 ---
 **EXAMPLE**
 
@@ -104,5 +89,23 @@ Please [Click here]({{site.baseurl}}/download/) to download the dataset.
 	<td class="tg-031e"><i>Show me the 3rd product in some different directions ... What about the product in the 5th image?</i></td>
   </tr>
 </table>  
+
+---
+---
+**CODE**
+<div class='row section highlight'>
+  <div class='col-xs-10 col-xs-offset-1'>
+Put code link here
+  </div>
+</div>
+
+---
+---
+**PAPER**
+
+<!-- Put paper arxiv link here -->
+Please download the paper here [paper link](paper.pdf)
+
+---
 
 

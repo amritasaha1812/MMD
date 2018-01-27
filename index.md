@@ -32,7 +32,7 @@ Please download the paper here [paper link](paper.pdf)
 **EXAMPLE**
 
 <!-- Put  example here -->
-![Example Dialog Session](/images/dialog_example.png){:class="img-responsive"}
+![Example Dialog Session](images/dialogue_example.png){:class="img-responsive"}
 
 ---
 ---

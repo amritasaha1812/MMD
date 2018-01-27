@@ -35,12 +35,6 @@ Please [Click here]({{site.baseurl}}/download/) to download the dataset.
 
 ---
 ---
-**EXAMPLE**
-
-![image-title-here](/images/dialogue_example.png){:class="img-responsive"}
-
----
----
 
 ### Key Challenges posed by dataset
 

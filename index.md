@@ -27,6 +27,10 @@ Put code link here
 
 <!-- Put paper arxiv link here -->
 Please download the paper here [paper link](paper.pdf)
+---
+**DATASET**
+
+Please [Click here]({{site.baseurl}}/download/) to download the dataset.
 
 ---
 ---
@@ -36,11 +40,6 @@ Please download the paper here [paper link](paper.pdf)
 ![Example Dialog Session](images/dialogue_example.png){:class="img-responsive"}
 
 ---
----
-**DATASET**
-
-Please [Click here]({{site.baseurl}}/download/) to download the dataset.
-
 ---
 ### Two-Fold Challenges of this Dataset
 

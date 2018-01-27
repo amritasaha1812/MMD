@@ -29,6 +29,13 @@ Please download the paper here [paper link](paper.pdf)
 
 ---
 ---
+**EXAMPLE**
+
+<!-- Put  example here -->
+![Example Dialog Session](/images/dialog_example.png){:class="img-responsive"}
+
+---
+---
 **DATASET**
 
 Please [Click here]({{site.baseurl}}/download/) to download the dataset.
@@ -90,6 +97,7 @@ Please [Click here]({{site.baseurl}}/download/) to download the dataset.
 	<td class="tg-031e"><b>Inference using domain knowledge and context</b></td>
 	<td class="tg-031e">Sometimes inferences for the user?s questions go beyond the dialog context to understanding the domain</td>
 	<td class="tg-031e"><i>Will the 5th result go well with a large sized messenger bag?</i></td>
+  </tr>	
   <tr>
   	<td class-"tg-031e"><b>Coreference or Ellipses Resolution</b></td>
 	<td class="tg-031e">Temporal continuity between successive questions from the user may cause some of them to be incomplete or to refer to items or aspects mentioned previously</td>

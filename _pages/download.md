@@ -9,10 +9,9 @@ The dataset can be downloaded in .zip format from the link below: <br>
 
 ### **Information About Different Files in the Dataset**
 
-1. **dataset**
-It contains the two versions of the dataset (V1 and V2 as discussed in the paper). Each catalog entry is a JSON object having the following fields 
-
-2. **raw_catalogs**
+---
+---
+1. **raw_catalogs**
 It contains the raw catalog of fashion items crawled from 4 fashion sites. Each of the folders contain a list of json files, each json file being the catalog description of a single product. The catalog description usually comes as a list of attribute value pairs, where some of the values may be an image or text. Further the textual attributes can be short crisp phrases or more unstructured longer descriptions. Some of the top attributes (and some example values) are listed below.
 <ul style="list-style-type:disc">
 <li><b>fashion-category (taxonomy)</b>: category of the fashion item (e.g. men > jacket > leather jacket)</li>
@@ -46,15 +45,18 @@ It contains the raw catalog of fashion items crawled from 4 fashion sites. Each 
 <li><b>similar-items</b>: list of urls to similar looking product </li>
 </ul>
 
-3. **meta_data**
+---
+---
+
+2. **meta_data**
 It contains several meta-data for e.g. taxonomy over the fashion items, handcrafted lexicon of more than 40 fashion attributes, celebrity profiles (anonymized) and style-tip 
 <ul style="list-style-type:disc">
 <li> taxonomy: contains two files, taxonomy_men and taxonomy_women, each of them of the form (for e.g. in taxonomy_men). Each taxonomy entry is called a fashion synset or simply synset (e.g. turtleneck, sweater, quilter jacket etc. are synsets)
 	<ul style="list-style-type:disc">
-	<li>man\>apparel\>layer_3_upper_body\>sweater\>turtleneck,turtle neck</li>
-	<li>man\>apparel\>layer_3_upper_body\>jacket\>quilted jacket </li>
-	<li>man\>apparel\>layer-2-lower-body\>trouser\>formal-trousers, dressed pants </li>
-	<li>man\>apparel\>layer_2_lower_body\>joggers,jogger</li>
+	<li>man>apparel>layer_3_upper_body>sweater>turtleneck,turtle neck</li>
+	<li>man>apparel>layer_3_upper_body>jacket>quilted jacket </li>
+	<li>man>apparel>layer-2-lower-body>trouser>formal-trousers, dressed pants </li>
+	<li>man>apparel>layer_2_lower_body>joggers,jogger</li>
 	</ul>
 </li>
 <li><b>attribute_lexicons</b>: contains a txt files for each of the 47 fashion attributes. Each line in the txt files is of the format <lexicon_word><tab><frequency> (here frequency refers to the approximate frequency of the lexicon word in the dataset)</li>
@@ -66,7 +68,11 @@ It contains several meta-data for e.g. taxonomy over the fashion items, handcraf
 <li><b>goes_with_synset_attribute_per_synset_attribute</b>: for every fashion item having a specific attribute, list the other fashion items having a specific attribute, that can go well with the former (e.g. polka dotted scarf goes well with white blouson top)</li>
 </ul>
 
-4. **dataset**
+
+---
+---
+
+3. **dataset**
 This contains the two versions of the dataset as discussed in the paper. Each of the train, valid and test splits has a json file for each dialog session. Each json file is a list of utterances, each utterance being a dictionary of the following
 <ul style="list-style-type:disc">
 <li> speaker: speaker of the current utterance (User or System)</li>

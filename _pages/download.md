@@ -11,7 +11,18 @@ The dataset can be downloaded in .zip format from the link below: <br>
 
 ---
 ---
-1. **raw_catalogs**
+
+1. **dataset**
+This contains the two versions of the dataset as discussed in the paper. Each of the train, valid and test splits has a json file for each dialog session. Each json file is a list of utterances, each utterance being a dictionary of the following
+<ul style="list-style-type:disc">
+<li> <b>speaker</b>: speaker of the current utterance (User or System)</li>
+<li> <b>utterance</b>: which is itself a dictionary of the following; "nlg" (i.e. the true text utterance), "images" i.e. a list of true image responses, "false nlg" i.e. a false text utterance and "false images" i.e. a list of false image responses. Remaining items of the dictionary hold more structured details about the utterance and should not be used for building the models. They can only be used for evaluation (though our current evaluation strategy does not require any more additional field other than the above four, "nlg", "images", "false nlg" and "false images"</li>
+</ul>
+
+---
+---
+
+2. **raw_catalogs**
 It contains the raw catalog of fashion items crawled from 4 fashion sites. Each of the folders contain a list of json files, each json file being the catalog description of a single product. The catalog description usually comes as a list of attribute value pairs, where some of the values may be an image or text. Further the textual attributes can be short crisp phrases or more unstructured longer descriptions. Some of the top attributes (and some example values) are listed below.
 <ul style="list-style-type:disc">
 <li><b>fashion-category (taxonomy)</b>: category of the fashion item (e.g. men > jacket > leather jacket)</li>
@@ -48,7 +59,7 @@ It contains the raw catalog of fashion items crawled from 4 fashion sites. Each 
 ---
 ---
 
-2. **meta_data**
+3. **meta_data**
 It contains several meta-data for e.g. taxonomy over the fashion items, handcrafted lexicon of more than 40 fashion attributes, celebrity profiles (anonymized) and style-tip 
 <ul style="list-style-type:disc">
 <li> taxonomy: contains two files, taxonomy_men and taxonomy_women, each of them of the form (for e.g. in taxonomy_men). Each taxonomy entry is called a fashion synset or simply synset (e.g. turtleneck, sweater, quilter jacket etc. are synsets)
@@ -71,15 +82,4 @@ It contains several meta-data for e.g. taxonomy over the fashion items, handcraf
 </ul>
 
 
----
----
 
-3. **dataset**
-This contains the two versions of the dataset as discussed in the paper. Each of the train, valid and test splits has a json file for each dialog session. Each json file is a list of utterances, each utterance being a dictionary of the following
-<ul style="list-style-type:disc">
-<li> <b>speaker</b>: speaker of the current utterance (User or System)</li>
-<li> <b>utterance</b>: which is itself a dictionary of the following; "nlg" (i.e. the true text utterance), "images" i.e. a list of true image responses, "false nlg" i.e. a false text utterance and "false images" i.e. a list of false image responses. Remaining items of the dictionary hold more structured details about the utterance and should not be used for building the models. They can only be used for evaluation (though our current evaluation strategy does not require any more additional field other than the above four, "nlg", "images", "false nlg" and "false images"</li>
-</ul>
-
----
----

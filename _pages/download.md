@@ -38,7 +38,7 @@ It contains the raw catalog of fashion items crawled from 4 fashion sites. Each 
 <li><b>fit</b>: fitting of the fashion item (e.g. skinny-fit, form-fit, one-size-fits-all)</li>
 <li><b>length</b>: length of the fashion item (e.g. ankle-length, knee-length)</li>
 <li><b>sleeves</b>: type of sleeves of the fashion item (e.g. full sleeves, bell sleeves, sleeveless)</li>
-<li><b>available_sizes: list of available sizes for the fashion item (e.g. Small, Medium, Large)</li>
+<li><b>available_sizes</b>: list of available sizes for the fashion item (e.g. Small, Medium, Large)</li>
 <li><b>details</b>: details of other attributes of the fashion item (it is usually more unstructured, with longer descriptions)</li>
 <li><b>bestSellerRanking</b>: bestSeller Ranking of the fashion item (e.g. Rank #1003 in the Category: footwear)</li>
 <li><b>reviewStars</b>: Review rating received by the fashion item</li>

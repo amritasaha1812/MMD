@@ -52,21 +52,21 @@ It contains several meta-data for e.g. taxonomy over the fashion items, handcraf
 <li> taxonomy: contains two files, taxonomy_men and taxonomy_women, each of them of the form (for e.g. in taxonomy_men). Each taxonomy entry is called a fashion synset or simply synset (e.g. turtleneck, sweater, quilter jacket etc. are synsets)
 	<ul style="list-style-type:disc">
 	<li>man\>apparel\>layer_3_upper_body\>sweater\>turtleneck,turtle neck</li>
-	<li>man\>apparel\>layer_3_upper_body\>jacket\>quilted jacket </li
+	<li>man\>apparel\>layer_3_upper_body\>jacket\>quilted jacket </li>
 	<li>man\>apparel\>layer-2-lower-body\>trouser\>formal-trousers, dressed pants </li>
 	<li>man\>apparel\>layer_2_lower_body\>joggers,jogger</li>
 	</ul>
 </li>
-<li>attribute_lexicons: contains a txt files for each of the 47 fashion attributes. Each line in the txt files is of the format <lexicon_word><tab><frequency> (here frequency refers to the approximate frequency of the lexicon word in the dataset)</li>
-<li>celebrity profiles: this contains two files, one capturing the distribution of fashion preferences of each of the celebrity over all the fashion items, and the other enlisting the distribution of celebrities likely to show preference towards each of the fashion items</li>
-<li>style-tip: this contains three files, each for men's fashion and women's fashion, enlisting for every fashion item, the list of associated fashion items that are likely to go well with it
+<li><b>attribute_lexicons</b>: contains a txt files for each of the 47 fashion attributes. Each line in the txt files is of the format <lexicon_word><tab><frequency> (here frequency refers to the approximate frequency of the lexicon word in the dataset)</li>
+<li><b>celebrity profiles</b>: this contains two files, one capturing the distribution of fashion preferences of each of the celebrity over all the fashion items, and the other enlisting the distribution of celebrities likely to show preference towards each of the fashion items</li>
+<li><b>style-tip</b>: this contains three files, each for men's fashion and women's fashion, enlisting for every fashion item, the list of associated fashion items that are likely to go well with it
 <ul style="list-style-type:disc">
-<li>goes_with_synset_per_synset: for every fashion synset (taxonomy entry), the list of other fashion items that can go well with the former (e.g. scarf goes well with blouson top)</li>
-<li>goes_with_synset_attribute_per_synset: for every fashion item, list the other fashion items having a specific attribute, that can go well with the former (e.g. polka dotted scarf goes well with blouson top)</li>
-<li>goes_with_synset_attribute_per_synset_attribute: for every fashion item having a specific attribute, list the other fashion items having a specific attribute, that can go well with the former (e.g. polka dotted scarf goes well with white blouson top)</li>
+<li><b>goes_with_synset_per_synset</b>: for every fashion synset (taxonomy entry), the list of other fashion items that can go well with the former (e.g. scarf goes well with blouson top)</li>
+<li><b>goes_with_synset_attribute_per_synset</b>: for every fashion item, list the other fashion items having a specific attribute, that can go well with the former (e.g. polka dotted scarf goes well with blouson top)</li>
+<li><b>goes_with_synset_attribute_per_synset_attribute</b>: for every fashion item having a specific attribute, list the other fashion items having a specific attribute, that can go well with the former (e.g. polka dotted scarf goes well with white blouson top)</li>
 </ul>
 
-3. **dataset**
+4. **dataset**
 This contains the two versions of the dataset as discussed in the paper. Each of the train, valid and test splits has a json file for each dialog session. Each json file is a list of utterances, each utterance being a dictionary of the following
 <ul style="list-style-type:disc">
 <li> speaker: speaker of the current utterance (User or System)</li>

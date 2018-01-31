@@ -77,8 +77,9 @@ It contains several meta-data for e.g. taxonomy over the fashion items, handcraf
 3. **dataset**
 This contains the two versions of the dataset as discussed in the paper. Each of the train, valid and test splits has a json file for each dialog session. Each json file is a list of utterances, each utterance being a dictionary of the following
 <ul style="list-style-type:disc">
-<li> speaker: speaker of the current utterance (User or System)</li>
-<li> utterance: which is itself a dictionary of the following; "nlg" (i.e. the true text utterance), "images" i.e. a list of true image responses, "false nlg" i.e. a false text utterance and "false images" i.e. a list of false image responses. Remaining items of the dictionary hold more structured details about the utterance and should not be used for building the models. They can only be used for evaluation (though our current evaluation strategy does not require any more additional field other than the above four, "nlg", "images", "false nlg" and "false images"</li>
+<li> <b>speaker</b>: speaker of the current utterance (User or System)</li>
+<li> <b>utterance</b>: which is itself a dictionary of the following; "nlg" (i.e. the true text utterance), "images" i.e. a list of true image responses, "false nlg" i.e. a false text utterance and "false images" i.e. a list of false image responses. Remaining items of the dictionary hold more structured details about the utterance and should not be used for building the models. They can only be used for evaluation (though our current evaluation strategy does not require any more additional field other than the above four, "nlg", "images", "false nlg" and "false images"</li>
 </ul>
 
-
+---
+---

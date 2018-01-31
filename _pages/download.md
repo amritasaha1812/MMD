@@ -67,6 +67,8 @@ It contains several meta-data for e.g. taxonomy over the fashion items, handcraf
 <li><b>goes_with_synset_attribute_per_synset</b>: for every fashion item, list the other fashion items having a specific attribute, that can go well with the former (e.g. polka dotted scarf goes well with blouson top)</li>
 <li><b>goes_with_synset_attribute_per_synset_attribute</b>: for every fashion item having a specific attribute, list the other fashion items having a specific attribute, that can go well with the former (e.g. polka dotted scarf goes well with white blouson top)</li>
 </ul>
+</li>
+</ul>
 
 
 ---

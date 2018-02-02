@@ -5,7 +5,7 @@ permalink: /download/
 ---
 
 The dataset can be downloaded in .zip format from the link below: <br>
-[download link](https://drive.google.com/drive/folders/1iSsx36u-gvb8g-Oy1Hg00w0hahUyJgtl) <br>
+[download link](https://drive.google.com/drive/folders/1JOGHzideeAsmykMUQD3z7aGFg-M4QlE2?usp=sharing) <br>
 
 ### **Information About Different Files in the Dataset**
 

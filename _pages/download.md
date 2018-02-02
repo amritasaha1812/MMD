@@ -62,7 +62,7 @@ It contains the raw catalog of fashion items crawled from 4 fashion sites. Each 
 3. **meta_data**
 It contains several meta-data for e.g. taxonomy over the fashion items, handcrafted lexicon of more than 40 fashion attributes, celebrity profiles (anonymized) and style-tip 
 <ul style="list-style-type:disc">
-<li> taxonomy: contains two files, taxonomy_men and taxonomy_women, each of them of the form (for e.g. in taxonomy_men). Each taxonomy entry is called a fashion synset or simply synset (e.g. turtleneck, sweater, quilter jacket etc. are synsets)
+<li> <b>taxonomy:</b> contains two files, taxonomy_men and taxonomy_women, each of them of the form (for e.g. in taxonomy_men). Each taxonomy entry is called a fashion synset or simply synset (e.g. turtleneck, sweater, quilter jacket etc. are synsets)
 	<ul style="list-style-type:disc">
 	<li>man>apparel>layer_3_upper_body>sweater>turtleneck,turtle neck</li>
 	<li>man>apparel>layer_3_upper_body>jacket>quilted jacket </li>

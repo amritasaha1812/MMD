@@ -26,7 +26,19 @@ To be made available soon!
 **PAPER**
 
 <!-- Put paper arxiv link here -->
-Please download the paper here [paper link](paper.pdf)
+Please download the paper here [paper link](https://arxiv.org/abs/1704.00200)
+---
+---
+**BIBTEX**
+
+@article{1704.00200,
+Author = {Amrita Saha and Mitesh M. Khapra and Karthik Sankaranarayanan},
+Title = {Towards Building Large Scale Multimodal Domain-Aware Conversation Systems},
+Year = {2017},
+Eprint = {arXiv:1704.00200},
+}
+
+---
 ---
 **DATASET**
 

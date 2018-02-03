@@ -54,7 +54,7 @@ Please [Click here]({{site.baseurl}}/download/) to download the dataset.
 
 ---
 ---
-### Two-Fold Challenges of this Dataset
+### Multi-Fold Challenges of this Dataset
 
 <style type="text/css">
 .tg  {border-collapse:collapse;border-spacing:0;}

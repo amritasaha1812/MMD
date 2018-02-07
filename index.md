@@ -30,6 +30,14 @@ Please download the paper here [paper link](https://arxiv.org/abs/1704.00200)
 
 ---
 ---
+**AAAI 2018 SLIDES**
+
+<!-- Put paper arxiv link here -->
+Please download the slides here [slides link](MMD_AAAI.pdf)
+
+
+---
+---
 **BIBTEX**
 
 @article{1704.00200, <br/>

@@ -55,67 +55,76 @@
 	
 	<TABLE CELLPADDING=3 BORDER="1" class="tg">
 	<TR><TH ALIGN="LEFT" VALIGN="TOP" WIDTH=200><SPAN><B>Automata State</B></SPAN></TH>
-	<TH ALIGN="LEFT" VALIGN="TOP" WIDTH=451><SPAN><B>State Description</SPAN></TH>
+	<TH ALIGN="LEFT" VALIGN="TOP" WIDTH=351><SPAN><B>State Description</SPAN></TH>
+	<TH ALIGN="LEFT" VALIGN="TOP" WIDTH=100><SPAN><B>Question-Type In Dataset</SPAN></TH>
 	</TR>
 	<TR><TH ALIGN="LEFT" VALIGN="TOP" WIDTH=200><SPAN><B>greeting</B></SPAN></TH>
-	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=451>Shopper greets</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=351>Shopper greets</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=100> - </TD>
 	</TR>
 	<TR><TH ALIGN="LEFT" VALIGN="TOP" WIDTH=200><SPAN><B>self-info</B></SPAN></TH>
-	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=451>Shopper gives information about him/herself</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=351>Shopper gives information about him/herself</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=100> - </TD>
 	</TR>
 	<TR><TH ALIGN="LEFT" VALIGN="TOP" WIDTH=200><SPAN><B>give-requirement</B></SPAN></TH>
-	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=451>Shopper describes his requirements</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=351>Shopper describes his requirements</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=100> - </TD>
 	</TR>
 	<TR><TH ALIGN="LEFT" VALIGN="TOP" WIDTH=200><SPAN><B>show-image</B></SPAN></TH>
-	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=451>Agent shows relevant responses for the Shopper's query</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=351>Agent shows relevant responses for the Shopper's query</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=100><I>show_result</I></TD>
 	</TR>
 	<TR><TH ALIGN="LEFT" VALIGN="TOP" WIDTH=200><SPAN><B>give-image-description</B></SPAN></TH>
-	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=451>Agent generates short description of the product, using visual and catalog information</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=351>Agent generates short description of the product, using visual and catalog information</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=100> - </TD>
 	</TR>
-	<TR><TH ALIGN="LEFT" VALIGN="TOP" WIDTH=200><SPAN><B>give-feedback-on-latest-results, show-more</B></SPAN></TH>
-	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=451>Shopper expresses preference towards one or more of the last results shown and possibly modifies his requirements and wants to see more</TD>
-	</TR>
-	<TR><TH ALIGN="LEFT" VALIGN="TOP" WIDTH=200><SPAN><B>give-feedback-on-previous-results, show-more</B></SPAN></TH>
-	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=451>Shopper expresses preference towards one or more of the results shown previously and possibly modifies his requirements and wants to see more</TD>
-	</TR>
-	<TR><TH ALIGN="LEFT" VALIGN="TOP" WIDTH=200><SPAN><B>give-feedback-on-latest-results, show-image, show-more</B></SPAN></TH>
-	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=451>Shopper expresses preference towards one or more of the latest results, and shows a new image to possibly modify his requirements and wants to see more</TD>
-	</TR>
-	<TR><TH ALIGN="LEFT" VALIGN="TOP" WIDTH=200><SPAN><B>give-feedback-on-previous-results, show-image, show-more</B></SPAN></TH>
-	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=451>Shopper expresses preference towards one or more results shown previously, and shows a new image to possibly modify his requirements and wants to see more</TD>
+	<TR><TH ALIGN="LEFT" VALIGN="TOP" WIDTH=200><SPAN><B>Like/Dislike specific items / overall items  and show-more</B></SPAN></TH>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=351>Shopper expresses preference towards one or more of the last results or previously shown results and possibly modifies his requirements (optionally by posting a new image) and wants to see more</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=100><I>like_n_show_result</I> or <I>do_not_like_n_show_result</I> or <I>like_earlier_show_result</I> or <I>do_not_like_earlier_show_result</I></TD>
 	</TR>
 	<TR><TH ALIGN="LEFT" VALIGN="TOP" WIDTH=200><SPAN><B>show-orientation</B></SPAN></TH>
-	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=451>Shopper wants to see an item from different orientations</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=351>Shopper wants to see an item from different orientations</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=100><I>show_orientation</I></TD>
 	</TR>
 	<TR><TH ALIGN="LEFT" VALIGN="TOP" WIDTH=200><SPAN><B>show-similar</B></SPAN></TH>
-	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=451>Shopper wants to see similar to a particular item</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=351>Shopper wants to see similar to a particular item</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=100><I>show_similar_to</I></TD>
 	</TR>
 	<TR><TH ALIGN="LEFT" VALIGN="TOP" WIDTH=200><SPAN><B>goes-with</B></SPAN></TH>
-	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=451>Shopper asks for style-tip</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=351>Shopper asks for style-tip</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=100><I>go_with</I></TD>
 	</TR>
 	<TR><TH ALIGN="LEFT" VALIGN="TOP" WIDTH=200><SPAN><B>ask-attribute</B></SPAN></TH>
-	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=451>Shopper asks about the attributes of the items shown</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=351>Shopper asks about the attributes of the items shown</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=100><I>ask_attribute</I></TD>
 	</TR>
 	<TR><TH ALIGN="LEFT" VALIGN="TOP" WIDTH=200><SPAN><B>suited-for</B></SPAN></TH>
-	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=451>Shopper asks for other types of meta-info about the items shown</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=351>Shopper asks for other types of meta-info about the items shown</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=100><I>suited_for</I></TD>
 	</TR>
 	<TR><TH ALIGN="LEFT" VALIGN="TOP" WIDTH=200><SPAN><B>sort-results</B></SPAN></TH>
-	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=451>Shopper wants to sort the result set by some attribute</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=351>Shopper wants to sort the result set by some attribute</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=100><I>sort_results</I></TD>
 	</TR>
 	<TR><TH ALIGN="LEFT" VALIGN="TOP" WIDTH=200><SPAN><B>filter-results</B></SPAN></TH>
-	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=451>Shopper wants to filter the results based on some attribute</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=351>Shopper wants to filter the results based on some attribute</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=100><I>filter_results</I></TD>
 	</TR>
 	<TR><TH ALIGN="LEFT" VALIGN="TOP" WIDTH=200><SPAN><B>celebrity</B></SPAN></TH>
-	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=451>Shopper asks questions relating to some celebrities and his fashion items of interest</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=351>Shopper asks questions relating to some celebrities and his fashion items of interest</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=100><I>celebrity</I></TD>
 	</TR>
 	<TR><TH ALIGN="LEFT" VALIGN="TOP" WIDTH=200><SPAN><B>switch-synset</B></SPAN></TH>
-	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=451>Shopper wants to switch back to the type of fashion synset he had seen previously</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=351>Shopper wants to switch back to the type of fashion synset he had seen previously</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=100> - </TD>
 	</TR>
 	<TR><TH ALIGN="LEFT" VALIGN="TOP" WIDTH=200><SPAN><B>buy</B></SPAN></TH>
-	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=451>Shopper wants to buy one or more items</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=351>Shopper wants to buy one or more items</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=100><I>buy</I></TD>
 	</TR>
 	<TR><TH ALIGN="LEFT" VALIGN="TOP" WIDTH=200><SPAN><B>exit</B></SPAN></TH>
-	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=451>Shopper wants to exit</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=351>Shopper wants to exit</TD>
+	<TD ALIGN="LEFT" VALIGN="TOP" WIDTH=100> - </TD>
 	</TR>
 	</TABLE>
 	</DIV>

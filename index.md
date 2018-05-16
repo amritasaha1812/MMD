@@ -16,7 +16,7 @@ With this dataset, we propose 5 new sub-tasks for multimodal conversations along
 ---
 **CODE**
 
-Github Repository for the code [repo link] (https://github.com/amritasaha1812/MMD_Code)
+Github Repository for the code [repo link](https://github.com/amritasaha1812/MMD_Code)
 
 ---
 ---

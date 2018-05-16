@@ -15,11 +15,8 @@ With this dataset, we propose 5 new sub-tasks for multimodal conversations along
 ---
 ---
 **CODE**
-<div class='row section highlight'>
-  <div class='col-xs-10 col-xs-offset-1'>
+
 Github Repository for the code [repo link] (https://github.com/amritasaha1812/MMD_Code)
-  </div>
-</div>
 
 ---
 ---
